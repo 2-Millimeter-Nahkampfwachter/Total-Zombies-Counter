@@ -29,7 +29,7 @@ onplayerspawned(){
 zombie_counter(){
     level endon( "game_ended" );
     flag_wait( "initial_blackscreen_passed" );
-    self.zombiecounter = createserverfontstring( "Objective", 1.7 );
+    self.zombiecounter = createfontstring( "Objective", 1.7 );
     self.zombiecounter setpoint( "CENTER", "CENTER", 0, 200 );
     self.zombiecounter.alpha = 1;
     self.zombiecounter.hidewheninmenu = 1;
